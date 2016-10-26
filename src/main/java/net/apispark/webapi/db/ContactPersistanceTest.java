@@ -26,5 +26,5 @@ public class ContactPersistanceTest {
         ContactPersistence.INSTANCE.addContact(exemple);
         Assert.assertEquals(exemple, ContactPersistence.INSTANCE.getContact(exemple.getId()));
     }
-    
+
 }
