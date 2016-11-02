@@ -19,10 +19,12 @@ public class ContactPersistanceTest {
         Assert.assertNotEquals(null, exemple.getId());
     }
 
+
     @Test
     public void addContactTest2() throws Exception{
         Contact exemple = new Contact();
         ContactPersistence.INSTANCE.addContact(exemple);
         Assert.assertEquals(exemple, ContactPersistence.INSTANCE.getContact(exemple.getId()));
     }
+
 }
