@@ -1,1 +1,11 @@
+web: java -jar target/material-contacts-apispark-1.0.0-SNAPSHOT.jar
+
+
 language : java
+script :
+-mvn package
+deploy:
+  provider : heroku
+  app:
+    master : tranquil-coast-36446
+
